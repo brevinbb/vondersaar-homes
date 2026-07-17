@@ -37,6 +37,32 @@
     io.observe(el);
   });
 
+  /* ---------- gallery lightbox ---------- */
+  const lb = $("#lightbox");
+  if (lb) {
+    const lbImg = $("#lbImg");
+    const imgs = $$("#gallery .gitem img");
+    let idx = 0;
+    const show = (i) => {
+      idx = (i + imgs.length) % imgs.length;
+      lbImg.src = imgs[idx].src;
+      lbImg.alt = imgs[idx].alt;
+    };
+    const open = (i) => { show(i); lb.classList.add("open"); lb.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden"; };
+    const close = () => { lb.classList.remove("open"); lb.setAttribute("aria-hidden", "true"); document.body.style.overflow = ""; };
+    imgs.forEach((img, i) => img.addEventListener("click", () => open(i)));
+    $("#lbClose").addEventListener("click", close);
+    $("#lbNext").addEventListener("click", () => show(idx + 1));
+    $("#lbPrev").addEventListener("click", () => show(idx - 1));
+    lb.addEventListener("click", (e) => { if (e.target === lb) close(); });
+    document.addEventListener("keydown", (e) => {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") show(idx + 1);
+      else if (e.key === "ArrowLeft") show(idx - 1);
+    });
+  }
+
   if (reduce) return; // final state is baked into CSS
 
   /* ---------- prep wireframe strokes ---------- */
