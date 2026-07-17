@@ -81,6 +81,7 @@
   function render() {
     const rect = hero.getBoundingClientRect();
     const total = hero.offsetHeight - window.innerHeight;
+    if (total <= 0) { applyProgress(0); return; }
     const p = clamp(-rect.top / total, 0, 1);
     if (Math.abs(p - lastP) < 0.0008) return;
     lastP = p;

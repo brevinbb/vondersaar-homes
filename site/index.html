@@ -14,8 +14,8 @@
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <a class="nav__brand" href="#top">
-    <span class="nav__mark" aria-hidden="true">V</span>
+  <a class="nav__brand" href="#top" aria-label="Vondersaar Homes — home">
+    <img class="nav__logo" src="assets/logo.jpg" alt="" width="46" height="46" />
     <span class="nav__name">Vondersaar<span class="nav__name-sub">HOMES</span></span>
   </a>
   <nav class="nav__links" aria-label="Primary">
@@ -39,6 +39,9 @@
       <img src="assets/hero-home.jpg" alt="" />
     </div>
     <div class="hero__scan" aria-hidden="true"></div>
+
+    <!-- legibility veil so the headline reads in every phase -->
+    <div class="hero__veil" aria-hidden="true"></div>
 
     <!-- the wireframe that constructs itself -->
     <svg class="hero__wire" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
@@ -232,7 +235,7 @@
 <section class="contact" id="contact">
   <div class="contact__inner">
     <p class="sec-index sec-index--light">05 / START A PROJECT</p>
-    <h2 class="contact__title">Let's draw your home.</h2>
+    <h2 class="contact__title">Let's draw your <span class="g">home.</span></h2>
     <p class="contact__lede">Tell us about the home you're picturing. We'll help you turn it into a plan — and then into the place you live.</p>
     <div class="contact__actions">
       <a class="btn btn--solid" href="mailto:hello@vondersaarhomes.com">Email Us</a>
@@ -244,8 +247,7 @@
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer__brand">
-    <span class="nav__mark" aria-hidden="true">V</span>
-    <span>Vondersaar Homes</span>
+    <img class="footer__logo" src="assets/logo.jpg" alt="Vondersaar Homes" width="72" height="72" />
   </div>
   <p class="footer__tag">Custom · High-Quality · Eco-Friendly — since 1994.</p>
   <p class="footer__fine">© <span id="year"></span> Vondersaar Homes. Family-owned in Indiana. Website developed by Brevin Buster.</p>
