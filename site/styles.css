@@ -385,6 +385,13 @@ a{ color:inherit; text-decoration:none; }
 .contact__title .g{ font-style:italic; background:var(--gold-grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
 .contact__lede{ margin:1.4rem 0 2.4rem; max-width:46ch; color:var(--cream-dim); font-size:1.1rem; }
 .contact__actions{ display:flex; gap:1rem; flex-wrap:wrap; }
+.contact__detail{
+  margin-top:1.8rem; font-family:var(--f-mono); font-size:.82rem; letter-spacing:.06em;
+  color:var(--cream-dim); display:flex; gap:.9rem; flex-wrap:wrap; align-items:center;
+}
+.contact__detail a{ color:var(--gold-lit); transition:color .2s; }
+.contact__detail a:hover{ color:var(--cream); }
+.contact__detail span{ color:var(--gold-deep); }
 
 /* ============================================================
    FOOTER
@@ -397,6 +404,10 @@ a{ color:inherit; text-decoration:none; }
 }
 .footer__logo{ width:72px; height:72px; border-radius:50%; box-shadow:0 0 0 1px var(--line-soft); }
 .footer__tag{ font-family:var(--f-mono); font-size:.74rem; letter-spacing:.14em; color:var(--gold); }
+.footer__contact{ font-family:var(--f-mono); font-size:.8rem; letter-spacing:.04em; display:flex; gap:.7rem; flex-wrap:wrap; justify-content:center; }
+.footer__contact a{ color:var(--cream); transition:color .2s; }
+.footer__contact a:hover{ color:var(--gold-lit); }
+.footer__contact span{ color:var(--gold-deep); }
 .footer__fine{ font-size:.8rem; color:var(--cream-fnt); }
 
 /* ============================================================
