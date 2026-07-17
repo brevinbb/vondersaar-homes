@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vondersaar Homes — Custom Homes, Built Around You</title>
+<meta name="description" content="Family-owned custom home builder with 30+ years of experience. High-quality, eco-friendly homes built with attention to every detail — from your first home to your forever home." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__mark" aria-hidden="true">V</span>
+    <span class="nav__name">Vondersaar<span class="nav__name-sub">HOMES</span></span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#build">What We Build</a>
+    <a href="#process">Process</a>
+    <a href="#work">Work</a>
+    <a class="nav__cta" href="#contact">Start a Project</a>
+  </nav>
+</header>
+
+<!-- ============ HERO — scroll-driven construction ============ -->
+<section class="hero" id="top">
+  <div class="hero__sticky">
+
+    <!-- blueprint grid backdrop -->
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <!-- the finished photograph, revealed by a construction sweep -->
+    <div class="hero__photo" aria-hidden="true">
+      <img src="assets/hero-home.jpg" alt="" />
+    </div>
+    <div class="hero__scan" aria-hidden="true"></div>
+
+    <!-- the wireframe that constructs itself -->
+    <svg class="hero__wire" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <!-- FOUNDATION -->
+      <g data-layer="foundation" class="wire-group">
+        <line x1="60" y1="470" x2="1140" y2="470" />
+        <line x1="60" y1="482" x2="1140" y2="482" />
+      </g>
+      <!-- WALLS -->
+      <g data-layer="walls" class="wire-group">
+        <!-- garage wing (left) -->
+        <rect x="80" y="330" width="230" height="140" />
+        <!-- low connector -->
+        <rect x="310" y="360" width="150" height="110" />
+        <!-- central two-story block -->
+        <rect x="460" y="250" width="280" height="220" />
+        <!-- right two-story wing -->
+        <rect x="740" y="285" width="260" height="185" />
+        <!-- far right low -->
+        <rect x="1000" y="345" width="120" height="125" />
+      </g>
+      <!-- ROOF -->
+      <g data-layer="roof" class="wire-group">
+        <path d="M70 330 L195 262 L320 330 Z" />
+        <path d="M300 360 L385 320 L470 360" />
+        <path d="M450 250 L600 176 L750 250 Z" />
+        <path d="M730 285 L870 220 L1010 285 Z" />
+        <path d="M990 345 L1060 308 L1130 345" />
+        <!-- ridge accents -->
+        <line x1="195" y1="262" x2="195" y2="330" />
+        <line x1="600" y1="176" x2="600" y2="250" />
+        <line x1="870" y1="220" x2="870" y2="285" />
+      </g>
+      <!-- WINDOWS + DETAIL -->
+      <g data-layer="detail" class="wire-group">
+        <!-- garage doors -->
+        <rect x="100" y="372" width="58" height="98" />
+        <rect x="168" y="372" width="58" height="98" />
+        <rect x="236" y="372" width="58" height="98" />
+        <!-- garage X accent -->
+        <line x1="150" y1="290" x2="240" y2="325" />
+        <line x1="240" y1="290" x2="150" y2="325" />
+        <rect x="150" y="290" width="90" height="35" />
+        <!-- connector windows -->
+        <rect x="330" y="392" width="110" height="60" />
+        <!-- central: portico columns -->
+        <line x1="520" y1="330" x2="520" y2="470" />
+        <line x1="560" y1="330" x2="560" y2="470" />
+        <line x1="640" y1="330" x2="640" y2="470" />
+        <line x1="680" y1="330" x2="680" y2="470" />
+        <rect x="505" y="318" width="190" height="16" />
+        <!-- central tall windows -->
+        <rect x="478" y="300" width="30" height="150" />
+        <rect x="692" y="300" width="30" height="150" />
+        <!-- right wing windows + X accent -->
+        <rect x="770" y="320" width="60" height="80" />
+        <rect x="912" y="320" width="60" height="80" />
+        <line x1="850" y1="250" x2="892" y2="272" />
+        <line x1="892" y1="250" x2="850" y2="272" />
+        <rect x="850" y="250" width="42" height="22" />
+        <!-- far right window -->
+        <rect x="1030" y="378" width="60" height="72" />
+      </g>
+    </svg>
+
+    <!-- headline overlay -->
+    <div class="hero__copy">
+      <p class="hero__eyebrow"><span class="tick">◈</span> Est. 1994 · Family-Owned · Indiana</p>
+      <h1 class="hero__title">
+        <span class="line">We draw it.</span>
+        <span class="line">We build it.</span>
+        <span class="line accent">You live it.</span>
+      </h1>
+      <p class="hero__lede">Custom, high-quality, eco-friendly homes — brought to life from the first line on paper to the day you turn the key.</p>
+      <a class="btn btn--solid hero__btn" href="#contact">Start Your Build <span aria-hidden="true">→</span></a>
+    </div>
+
+    <!-- live construction readout (blueprint annotation) -->
+    <div class="hero__hud" aria-hidden="true">
+      <span class="hero__hud-label">CONSTRUCTION</span>
+      <span class="hero__hud-val" id="hudVal">00%</span>
+      <span class="hero__hud-stage" id="hudStage">FOUNDATION</span>
+    </div>
+
+    <div class="hero__scrollcue" aria-hidden="true">
+      <span>SCROLL TO BUILD</span>
+      <span class="hero__scrollcue-line"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>CUSTOM DESIGN</span><span class="dot">◈</span>
+    <span>ENERGY EFFICIENT</span><span class="dot">◈</span>
+    <span>CRAFT-BUILT</span><span class="dot">◈</span>
+    <span>30+ YEARS</span><span class="dot">◈</span>
+    <span>FAMILY-OWNED</span><span class="dot">◈</span>
+    <span>CUSTOM DESIGN</span><span class="dot">◈</span>
+    <span>ENERGY EFFICIENT</span><span class="dot">◈</span>
+    <span>CRAFT-BUILT</span><span class="dot">◈</span>
+    <span>30+ YEARS</span><span class="dot">◈</span>
+    <span>FAMILY-OWNED</span><span class="dot">◈</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <p class="sec-index">01 / ABOUT</p>
+  <div class="about__grid">
+    <div class="about__lead">
+      <h2 class="about__title">Thirty years of homes that could only be yours.</h2>
+    </div>
+    <div class="about__body">
+      <p>Vondersaar Homes is a family-owned builder with three decades of experience shaping custom, high-quality, eco-friendly homes. We don't work from a catalog of floor plans — we start with your vision and draw toward it, obsessing over the details most builders skip.</p>
+      <p>Whether it's your first home or your forever home, you work directly with the family behind the name. That's the difference you feel in every joint, every sightline, and every quiet, efficient corner of the finished house.</p>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">30<span>+</span></span><span class="stat__label">Years building</span></div>
+        <div class="stat"><span class="stat__num">100<span>%</span></span><span class="stat__label">Custom, never templated</span></div>
+        <div class="stat"><span class="stat__num">1<span>st→∞</span></span><span class="stat__label">First home to forever home</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE BUILD ============ -->
+<section class="build" id="build">
+  <p class="sec-index">02 / WHAT WE BUILD</p>
+  <h2 class="build__title">Three commitments in every home.</h2>
+  <div class="build__cards">
+    <article class="card">
+      <span class="card__num">01</span>
+      <h3 class="card__title">Custom to the core</h3>
+      <p>Every home begins as a blank page. Your land, your life, your way of living — translated into a plan drawn only for you.</p>
+    </article>
+    <article class="card">
+      <span class="card__num">02</span>
+      <h3 class="card__title">Built to last</h3>
+      <p>High-quality materials and craftsmanship you can see and feel. We build the house we'd want to live in ourselves.</p>
+    </article>
+    <article class="card">
+      <span class="card__num">03</span>
+      <h3 class="card__title">Kind to the earth</h3>
+      <p>Eco-friendly, energy-efficient construction that lowers your footprint and your bills — comfort that costs less to keep.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <p class="sec-index">03 / THE PROCESS</p>
+  <h2 class="process__title">From first line to front door.</h2>
+  <ol class="process__steps">
+    <li class="pstep">
+      <span class="pstep__phase">PHASE 01</span>
+      <h3>Design</h3>
+      <p>We sit down together and draw. Your vision becomes a plan — every room, sightline, and detail decided with you, not for you.</p>
+    </li>
+    <li class="pstep">
+      <span class="pstep__phase">PHASE 02</span>
+      <h3>Build</h3>
+      <p>Foundation, frame, roof, finish. Family-run crews and trusted trades bring the drawing off the page with real craft.</p>
+    </li>
+    <li class="pstep">
+      <span class="pstep__phase">PHASE 03</span>
+      <h3>Live</h3>
+      <p>We hand you the keys to a home that fits the way you actually live — and stand behind it long after you move in.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ WORK / GALLERY ============ -->
+<section class="work" id="work">
+  <p class="sec-index">04 / SELECTED WORK</p>
+  <div class="work__head">
+    <h2 class="work__title">Homes we've brought to life.</h2>
+    <p class="work__note">More photography coming soon — pulled straight from the field.</p>
+  </div>
+  <div class="work__grid">
+    <figure class="work__item work__item--wide">
+      <img src="assets/hero-home.jpg" alt="Custom white-brick transitional home built by Vondersaar Homes on an open Indiana lot" loading="lazy" />
+      <figcaption>Modern transitional · White brick · Custom build</figcaption>
+    </figure>
+    <figure class="work__item work__item--soon"><span>Project photo<br />coming soon</span></figure>
+    <figure class="work__item work__item--soon"><span>Project photo<br />coming soon</span></figure>
+  </div>
+</section>
+
+<!-- ============ CTA / CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <p class="sec-index sec-index--light">05 / START A PROJECT</p>
+    <h2 class="contact__title">Let's draw your home.</h2>
+    <p class="contact__lede">Tell us about the home you're picturing. We'll help you turn it into a plan — and then into the place you live.</p>
+    <div class="contact__actions">
+      <a class="btn btn--solid" href="mailto:hello@vondersaarhomes.com">Email Us</a>
+      <a class="btn btn--ghost" href="tel:+10000000000">Call the Family</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__brand">
+    <span class="nav__mark" aria-hidden="true">V</span>
+    <span>Vondersaar Homes</span>
+  </div>
+  <p class="footer__tag">Custom · High-Quality · Eco-Friendly — since 1994.</p>
+  <p class="footer__fine">© <span id="year"></span> Vondersaar Homes. Family-owned in Indiana.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
